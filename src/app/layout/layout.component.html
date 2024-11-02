@@ -1,0 +1,30 @@
+<header>
+  <h1>ngChat</h1>
+  <nav>
+    @if(isAuth){
+      <a routerLink="/">home</a>
+    } @else {
+      <a routerLink="/login">login</a>
+      <a routerLink="/register">register</a>
+    }
+
+  </nav>
+  @if (isAuth){
+    <button class="layout-button btn" (click)="logout()">
+      log out
+    </button>
+  } @else {
+    <p>
+      not authorizated
+    </p>
+  }
+
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <h5>ngChat</h5>
+</footer>

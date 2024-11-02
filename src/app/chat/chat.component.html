@@ -1,0 +1,32 @@
+<section class="tools">
+
+</section>
+<section class="chat" #chat>
+  @for (message of messages; track message.id-1) {
+    @if (message.author === username) {
+      <div class="message-container self">
+        <div class="message">
+          <h5>{{ message.author }}</h5>
+          <span>{{ message.message }}</span>
+        </div>
+      </div>
+    } @else {
+      <div class="message-container">
+        <div class="message">
+          <h5>{{ message.author }}</h5>
+          <span>{{ message.message }}</span>
+        </div>
+      </div>
+    }
+
+
+  }
+</section>
+<div class="input-container">
+  <input type="text" [(ngModel)]="value" (keydown)="checkEnter($event)">
+  <button (click)="sendMessage()">
+    send
+  </button>
+</div>
+
+

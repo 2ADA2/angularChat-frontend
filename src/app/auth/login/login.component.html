@@ -1,0 +1,14 @@
+<section class="auth-section">
+  <h2>Login</h2>
+  <form [formGroup]="form">
+    <label>
+      <input type="name" formControlName = "username">
+    </label>
+    <label>
+      <input type="password" formControlName = "password">
+    </label>
+    <button (click)="login($event)" >
+      Login
+    </button>
+  </form>
+</section>

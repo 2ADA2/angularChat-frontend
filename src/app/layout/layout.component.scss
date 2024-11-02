@@ -1,0 +1,54 @@
+header {
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  height: 60px;
+  padding: 0 clamp(40px, 10vw, 300px);
+  justify-content: space-between;
+  align-items: center;
+
+  & a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & p {
+    user-select: none;
+    font-family: "JetBrains Mono Thin";
+    font-weight: 100;
+  }
+
+  & button {
+    width: 150px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+      border: 1px solid rgb(255, 255, 255);
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+main {
+  min-height: calc(100vh - 120px);
+}
+
+footer {
+  background: #1c1c1c;
+  color: white;
+  display: flex;
+  height: 60px;
+  padding: 0 clamp(40px, 10vw, 300px);
+  justify-content: space-between;
+  align-items: center;
+}

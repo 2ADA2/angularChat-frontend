@@ -1,0 +1,42 @@
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(200px, 20vw, 20vw);
+  padding-top: 40px;
+  gap: 40px;
+
+  h2 {
+    font-family: "JetBrains Mono Thin";
+    font-size: clamp(20px, 4vw, 60px);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & input {
+      width: clamp(400px, 3vw, 400px);
+      padding-left: 5px;
+      font-size: 24px;
+      height: 40px;
+      background: white;
+      border: 2px solid #1c1c1c;
+      border-radius: 5px;
+    }
+
+    & button {
+      width: 200px;
+      height: 40px;
+      background: #1c1c1c;
+      border:none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover{
+        background: rgba(28, 28, 28, 0.95);
+      }
+    }
+  }
+}
